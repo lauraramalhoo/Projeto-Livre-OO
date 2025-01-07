@@ -24,7 +24,8 @@ O objetivo é simples: controle a cobra e faça ela comer a comida (quadrado ama
 
 ## 💻 **Requisitos**
 
-Para rodar o jogo, você precisará do **Python** e do **Pygame** instalados em seu sistema.
+Para rodar o jogo, você precisará do **Python** e do **Pygame** instalados em seu sistema:
+
 
 ### Instalação do Pygame
 
@@ -32,3 +33,46 @@ Caso não tenha o Pygame instalado, você pode instalar facilmente usando o pip:
 
 ```bash
 pip install pygame
+```
+-----
+
+# 🔐 **Gerador de Senha Aleatória - Python** 🔐
+
+Esse é o **Gerador de Senha Aleatória**! Um projeto simples, mas poderoso, para ajudar a criar senhas seguras e difíceis de adivinhar. 🔑
+
+Este gerador permite que você configure o comprimento da senha e escolha se deseja incluir maiúsculas, minúsculas, números e até mesmo símbolos. 💻
+
+
+
+## 🎯 **Objetivo**
+
+O objetivo deste projeto é fornecer uma maneira simples e flexível de gerar senhas fortes. Com tantas contas online hoje em dia, é fundamental usar senhas únicas e seguras. Com ele, você pode criar senhas que atendem às suas necessidades de segurança, seja para uma conta de e-mail, redes sociais, ou até mesmo para seus sistemas internos.
+
+
+
+## 🚀 **Como Usar**
+
+1. **Instale o Python**: 
+   
+2. **Configuração do Gerador**:
+   - **Tamanho da Senha**: Defina o tamanho desejado para a senha gerada. O padrão é 8 caracteres, mas você pode ajustar conforme necessário.
+   - **Opções de Caracteres**:
+     - **Maiúsculas**: Ative para incluir letras maiúsculas.
+     - **Minúsculas**: Ative para incluir letras minúsculas.
+     - **Números**: Ative para incluir números.
+     - **Símbolos**: Ative para incluir símbolos especiais (como `@`, `#`, `!`).
+
+3. **Execute o Código**: Execute o script Python para gerar sua senha personalizada e segura.
+
+### Exemplo de código para rodar:
+```python
+from gerador_de_senha import GeradorDeSenha
+
+# Criando um gerador de senhas com tamanho 12 e incluindo símbolos
+gerador = GeradorDeSenha(tamanho=16, usar_simbolos=True, usar_maiusculas=True, usar_minusculas=True, usar_numeros=True)
+
+# Gerando a senha
+senha_gerada = gerador.gerar_senha()
+
+# Exibindo a senha gerada
+print(f"Senha gerada: {senha_gerada}")
